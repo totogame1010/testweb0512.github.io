@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>へい、トト - 音声AIアシスタント</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>🎙️ トトは聞いてます...</h1>
+  <p id="status">ステータス: 待機中</p>
+
+  <div class="chat-container">
+    <img src="https://i.imgur.com/OMzKZm4.png" alt="トトアバター" class="avatar" id="avatar"/>
+    <div id="chat-log"></div>
+  </div>
+
+  <form id="chat-form">
+    <input type="text" id="chat-input" placeholder="ここに話しかけてもOK"/>
+    <button type="submit">送信</button>
+  </form>
+
+  <div class="controls">
+    <button id="stop-btn">⏹️ 音声停止</button>
+    <button id="start-btn">▶️ 音声再開</button>
+    <button id="clear-btn">🗑️ 履歴クリア</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
